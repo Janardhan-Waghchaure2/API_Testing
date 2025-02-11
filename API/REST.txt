@@ -1,11 +1,25 @@
 ** REST IS A MOST COMMON WAY OF COMMUNICATION FOR 2 COMPUTERS/SERVERS.
 
+0. meaning of REST:
+
+   1. (RE)Representational: It refers to representing resources on the web. When you access a resource, 
+   like a user profile, you get a representation of it. This could be in the form of JSON, XML, HTML, etc. 
+   It's like getting a snapshot of that resource in a specific format.
+
+   2. (S)State: The state of a resource is all the current data associated with it at "any given time". 
+   For example, the state of a user profile might include the user's name, email, and profile picture.
+
+   3. (T)Transfer: This part is about transferring the state of the resource across the web. When you make 
+   a request to a server (like asking to see a user profile), the server transfers the representation of 
+   that resource's current state back to you.
+
+
 1. REST : Representational State transfer.
 REST APIs (also known as RESTful APIs) are application programming interfaces (APIs) that follow the constraints of REST's architectural style
 or REST api's are those api which follows a set of rules Called "rest standards".
 
 stateless -> every request contains all the info. to serve a perticualr response.
-req-res model -> 
+req-res model -> only client requests for data not vice versa.
 uri -> each rest requsts contains an uri for locating a resource on the internet.
 
 ALTERNATIVES FOR REST:
