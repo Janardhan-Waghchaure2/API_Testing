@@ -1,0 +1,4 @@
+Why meven:
+	1. automatic standard project skeleton creation.
+	2. ease of adding dependencies , from mvnrepository.com
+	3. seamless integration with CI/CD pipelines.

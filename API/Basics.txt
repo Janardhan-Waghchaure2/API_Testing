@@ -1,0 +1,21 @@
+API -> Application programming interface 
+
+API is set of software procedures which allows 2 different softawares to interact with each other.
+by interaction we means to transfer data from one application to another application/prgramme.
+
+product1/service1 <--- api ---> product1/serveice2
+
+
+analogy:
+	1. waiter -> API , he/she takes orders from customers and goes to kitchen and tells the
+                     chef to form the given orders. also he serves the customers with orders.
+	2. customer -> an application or the consumer of API , the person who want to eat something.
+
+	3. chef     -> the one who have actual data(or the one who could manipulate actual data) , the person who creates/prepares the actual food.
+
+
+example of api**
+For example, you go to the movie site, you enter your movie, name, and credit card information, and behold, you print out tickets.
+
+internally They(ex:- bookmyshow , etc..) are collaborating with other applications. This integration is called “seamless,” as you never have a clue when a software role is passed from one application to another.        
+

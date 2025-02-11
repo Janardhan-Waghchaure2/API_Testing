@@ -1,0 +1,42 @@
+1. Rest Assured is An java jar file / library which is used to automate API's and webservices.
+
+RestAssured.baseURL = "https://abcd.com";// base url for the api test.
+
+
+// given() is a static method (on the RestAssured class) that returns a RequestSpecification class object.
+
+https://domain.com/path/to/endpoint?q1=v1&q2=v2..
+
+
+given().queryParam("queryKey" , "queryValue"); // to add query parameters for api request. you can stack multiple of such .queryParam() to add multiple of query parameters.
+
+given().header("head-field" , "head-field-value");// to apply header fields for api request. we can also stack multiple of such .header() functions.
+
+given().body("request body");// to set the body for api request body.
+
+----
+
+when().post("a/b/c/d");// to handle post request on given endpoint.
+when().put("a/b/c/d");// to handle put request on given endpoint.
+when().get("a/b/c/d");// to handle get request on given endpoint.
+
+---
+
+then().assertThat().body("field" , equalTo("some-value"));// to validate if 
+// response body's field matches a specific value.
+
+then().assertThat().statusCode(200);// to validate a status code with given value.
+
+then().assertThat().header("field" , "fields-value"); // to validate header of response with given target.
+
+
+
+
+https://sample.com/path/to/endpoint/user/{userId}
+
+https://sample.com/path/to/endpoint/user/123
+
+
+
+
+

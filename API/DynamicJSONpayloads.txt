@@ -1,0 +1,14 @@
+1. "Dynamic" json payloads means that reading the data from external files.
+   ex:- xl or db or csv or any other data store and creating a json request body.
+
+2. its opposite of hardcoded request body. json body is created from external source due to which we can create 100's of requests programmatically without need 
+to create 100 different request body strings.
+
+
+
+{
+	"name":"some random name",
+	"isbn":"asdfsa",
+	"aisle":"a345afsd",
+	"auther":"janardhan adsfas"
+}

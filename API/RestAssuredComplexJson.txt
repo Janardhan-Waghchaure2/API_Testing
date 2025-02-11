@@ -1,0 +1,39 @@
+{
+    "dashboard": {
+        "purchaseAmount": 910,
+        "website": "rahulshettyacademy.com"
+    },
+
+    "courses": [
+        {
+            "title": "Selenium Python",
+            "price": 50,
+            "copies": 6
+        },
+        {
+            "title": "Cypress",
+            "price": 40,
+            "copies": 4
+        },
+        {
+            "title": "RPA",
+            "price": 45,
+            "copies": 10
+        }
+    ]   
+}
+
+JsonPath jp = new JsonPath(response_string); // pass the json body to constrcutor and jp will contain all the information.
+
+
+js.get(); // to fetch an attribute inside json.
+
+int count = js.getInt("courses.length");// to get size of array inside of json.
+
+int purchaseAmount = js.getInt("dashboard.purchaseAmount"); // to access the nested values
+
+String courseTitle1 = js.get("courses[0].title"); // to access the specific index of array inside json.
+
+for (int i = 0;i < count;i++){
+    System.out.println(js.get("courses["+i+"].title"));// printing all titles of courses.
+}

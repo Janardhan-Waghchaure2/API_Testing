@@ -1,0 +1,126 @@
+** REST IS A MOST COMMON WAY OF COMMUNICATION FOR 2 COMPUTERS/SERVERS.
+
+1. REST : Representational State transfer.
+REST APIs (also known as RESTful APIs) are application programming interfaces (APIs) that follow the constraints of REST's architectural style
+or REST api's are those api which follows a set of rules Called "rest standards".
+
+stateless -> every request contains all the info. to serve a perticualr response.
+req-res model -> 
+uri -> each rest requsts contains an uri for locating a resource on the internet.
+
+ALTERNATIVES FOR REST:
+	1. GraphQL.
+	2. gRPC(google Remote Procedural Calls)
+	3. WebSockets.
+	4. MQTT
+	5. EDA(Event driven Architecture)
+	6. SOAP
+
+Some characteristics of REST APIs include:------
+
+
+1)---- Statelessness
+Each request from the client to the server must include all the information needed to understand and complete the request. The server can't use any previously stored context information.
+(statelessness is important for scalability of servers as every request can be serverd by any of the server in cluster 
+in horizontally scalled system.)
+
+
+2)---- Request-response model(client server model)
+REST APIs are based on a request-response model, which can make them less ideal for real-time communication.
+(request is sent from client to server and not other way around.)
+
+
+
+3)---- Uniform Resource Identifier (URI) for sending requests.
+REST APIs typically include a URI, which can be a URL that provides a web address for the resource if it's accessed through the internet.
+in rest api requests we also send METHOD(get , put , post , delete) , and http version ex:- http/1.1
+
+
+4)---- header and body architecture.
+Header
+A header includes details needed to execute the call and handle the response.
+
+Body
+The body contains relevant information to or from the server. For example, a body may 
+contain new data to be added to the server through a POST or PUT method
+
+
+
+5)----- JSON(java script object notation)
+req. resp. body are json
+
+
+6)----- pagination
+if response of the api is too large then add pagination logic to 
+break a large response into smaller manageble responses.
+we can use /a/b?limit=23&offset=50 parameter for pagination.
+
+7)----- api versioning
+req. should specify the api versionaing init so that 
+
+
+------
+Idenpotency : calling api multiple times with same inputs will not alter the state db/system.
+POST   : NOT IDEMPOTENT  -> will alter the state if performed multiple times     -> this needs to be handled with more care.
+GET    : IDEMPOTENT      -> will not alter the state if performed multiple times
+PUT    : IDEMPOTENT      -> will not alter the state if performed multiple times
+DELETE : IDEMPOTENT      -> will not alter the state if performed multiple times
+
+
+-------
+
+2. older/legacy websites still uses soap API in architectures but  
+   latest ones uses REST API's in their architectures.
+
+
+3. Endpoint/base url :- address/url where api is hosted.
+
+4. HTTP methods:
+	1. GET  -> used when we wants to retrive information from servers.
+	2. PUT  -> to update already present entry on servers.
+	3. POST -> to send data to server. 
+	4. DELETE -> to delete some resources on servers.
+	5. PATCH
+
+
+----- API contract -----
+
+
+An API contract, or API agreement, is a legally binding contract that defines how an application programming interface (API) should be used and how different software or services should interact with each other. It's a formal agreement between an API provider and its consumers, and is a crucial part of modern software development
+
+ex:- 
+Google maps Add API(POST)
+This API will add new place into server.
+
+Compelete URL : https://sample.com/maps/api/place/add/json?key=some_key
+Base URL : https://sample.com
+Resource: /maps/api/place/add/json?key=some_key
+Query Parameters: 
+	key : to pass key for api.
+	key2 , key2 ... separated by &
+
+http method : POST
+body : {
+    "lat" : -23.43435
+    "long": 42.54223
+}
+
+
+----- example -----
+url -> post request -> https //rahulshettyacademy.com/maps/api/place/add/json
+{
+	"location" : {
+		"lat" : 30.23432 , 
+		"lng" : 20.43212
+	} , 
+	"accuracy" : 23 ,
+	"name" : "firstname middlename lastname" , 
+	"phone number" : "(+91) 993 321 3232" , 
+	"address" : "29, some random address" ,
+	"types" : [
+		"shoe park" , 
+		"shop"
+	] , 
+	"website" : "http://xyz.com" , 
+	"language" : "french-in"
+}

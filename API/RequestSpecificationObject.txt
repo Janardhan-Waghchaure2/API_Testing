@@ -1,0 +1,19 @@
+1. to encorporate common repeating data for request and resoponses we can 
+   encapsulate/group together request specifications into an object and 
+   pass this objects to multiple request's REDUCING CODE REPETATION.
+
+
+
+2. // now below created object can be used multiple number of times.
+   RequestSpecification reqSpecs = new RequestSpecBuilder()
+    .setBaseUri("https://rahulshettyacademy.com")
+    .addQueryParam("key" , "value")
+    .setContentType(ContentType.JSON).build(); // building the request specification.
+
+   Response res = given().spec(reqSpecs)
+	.body(bodyObj)
+	.when().post("/maps/api/place/add/json")
+  	.then().assertThat().statusCode(200).extract().response();
+
+3. note that you should only put the common things only in the 
+   request specification object.

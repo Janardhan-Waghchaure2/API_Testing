@@ -1,0 +1,5 @@
+** manually sending api requests(like https get , post , put , delete) by writing their headers 
+   and body , and varifying their responses is called as manual api testing.
+
+
+1. manual API testing can be done in postman(postman is one of the tool for api testing.)

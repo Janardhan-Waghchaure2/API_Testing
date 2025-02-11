@@ -1,0 +1,38 @@
+RestAssured library
+Serialization/deserialization
+POJO / Plain Old Java object.
+What is Schema validation?
+Why Schema validation needed?
+Request & Response specification.
+There are 2 types of fromats for API contract
+	1. Json 
+	2. XML
+
+
+
+Response Schema example
+{
+	"type": "object",
+	"required": [
+		"created",
+		"orderId"
+	],
+	"properties": {
+		"created": {
+			"title": "Created", 
+			"type": "boolean",
+			"examples": [
+				true , false
+			],
+			"default": false
+		},
+		"orderId": {
+			"title": "Orderid", 
+			"type": "string",
+			"default": null,
+			"examples": [
+				"3euspx6ZgzT-N7EM4PN85"
+			]
+		}
+	}
+}

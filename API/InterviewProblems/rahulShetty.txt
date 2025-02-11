@@ -1,0 +1,120 @@
+1. challeges in API testing?
+    1. A Lots of API documentation needed , unlike ui/end-to-end testing 
+       where with a simple url we can test out all the functionalities.
+       WE NEED KNOW FIRST HOW TO INTERACT WITH THE API(API CONTRACT) like
+	   1. endpoint
+	   2. path to resource
+	   3. query params
+	   4. payloads(body) needs to be known
+	   5. method(get/put/post/delete)
+	   6. response body(for validation)
+       
+    2. access to Databse -> ones we fetch the values from api then for validating
+       the response we need to compare it with the DB. hence ACCESS TO DB is needed
+       THIS HAPPENDS WHEN THE API IS FROM 3rd party and DB details wont be 
+       available with you.
+
+    3. auth overhead -> THERE WILL ALWAYS BE AN AUTH. MECHANISM INCLUDED which 
+       needs to be handle with resepective endpoints.
+
+-------
+2. diff between POST and PUT
+    POST -> to create new data/object on server side.
+    PUT  -> update object in server with new value.
+
+-------
+3. HTTP methods?
+    1. GET   -> to get the resource
+    2. PUT   -> to update or create/add resource
+    3. POST  -> to add/create/submit  the resource
+    4. DELETE-> to delete resource
+-------
+4. List out basic authentication techniques
+Session/Cookie auth
+OAuth
+Digest Auth
+Basic Auth
+--------
+5. why API testing is determined as most suitable form for Automation testing?
+   -> lets say we want to add an user to a digital platform/website.
+   by UI route automatin we need to interact with auth/login page then fill the 
+   form hit enter , etc..
+   -> whereas by API route(one we know endpoint) we can easily update user to DB
+   just by hitting API in one go.
+   HENCE INTERACTING WITH website VIA API is better than GUI route.
+   -> alos its more stable as UI elmenets & their xpaths keep changing &
+      slow internet(elements aren't loaded)
+--------
+6. what is REST ?
+   REST = Representational State Transfer.
+   REST is a way for different software applications to communicate with 
+   each other over the internet
+   
+   any API which follows below rules are REST API's.
+      1. communication(between 2 programmes) happends over http 
+      2. they use standard methods like get ,put,..
+      3. they are stateless.
+      4. resource are identified by the url's
+      5. typically payload is json and typical response is json,xml
+-----------
+7. what we varify in API testing ?
+    1. accuracy of response body data (by comparing to DB or some other source
+       of truth)
+    2. HTTP status codes
+    3. response time(for performance testing)
+    4. autherization testing(by entering wrong credentials users shouldn't be 
+       able to use the API)
+    5. NON-Functional Testing(performace testing , sequrity).
+-----------
+8. what are path and query params?
+   https://sample.com/orders/1234?key=value 
+                              |     |
+                          pathparam  query param
+-----------
+9. what are core components of HTTP request?
+
+1. HTTP request method: GET PUT POST DELETE.
+2. base URI
+3. parameters
+	1. query 
+	2. path
+4. req. headers -> key value pairs 
+5. req. body   -> resource/payload/data
+
+-----------
+10. if api is sending get request WITH SOME PAYLOAD then which method could 
+    be used?
+    GET or POST? -> post , as GET dont have payloads.
+-----------
+11. diff between API and UI testing.
+    UI testing -> images , buttons , fonts , etc.. is checked
+               -> frontend testing
+
+    API testing -> here we check whether a server/application is working fine
+                -> backend testing
+------------
+12. which protocol is used in RESTFUl service? -> http
+
+------------
+
+13. What is SOAP WebService?
+   -> Simple Object Access Protocol. it uses XML to commnicate with other
+      comps.
+
+-------------
+
+14. how resources are represented in REST -> http method + URI.
+
+
+-------------
+
+15. can we use GET for deleting resource?
+Technically, you can use the GET method to delete a resource, but it's 
+strongly discouraged and considered bad practice. The GET method is intended 
+to retrieve data without causing any side effects, such as modifying or 
+deleting resources. Using GET for deletion can lead to serious issues, 
+such as accidental deletions when a user clicks a link or refreshes a page.
+
+-------------
+
+

@@ -1,0 +1,64 @@
+** credentials for authentication
+base url : https://courses.rahulshettyacademy.com/
+
+gmail : janardanwaghchaure3@gmail.com
+password : 1 to 9.
+
+
+1. login POST REQUEST	--------
+   URL : https://rahulshettyacademy.com/api/ecom/auth/login
+   req_header : 
+	{
+    		"userEmail": "janardanwaghchaure3@gmail.com",
+    		"userPassword": "Jana9922"
+	}
+   res_body :
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjkwZDI4YmFlMmFmZDRjMGIyMTVlZjAiLCJ1c2VyRW1haWwiOiJqYW5hcmRhbndhZ2hjaGF1cmUzQGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjgyMDg5NDkwNTYsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3MjA3NzQ4MTYsImV4cCI6MTc1MjMzMjQxNn0.ZjKHCHIXaj6aV64_vFz6aSeybu1itSNdb4KxDtrrFhM",
+    "userId": "6690d28bae2afd4c0b215ef0",
+    "message": "Login Successfully"
+}
+      
+2. add new Prodcut POST REQUEST -----	
+    
+    URL : https://rahulshettyacademy.com/api/ecom/product/add-product
+    data type : form-data
+
+    request body
+	productName:qwerty
+	productAddedBy:6690d28bae2afd4c0b215ef0
+	productCategory:fashion
+	productSubCategory:shirts
+	productPrice:11500
+	productDescription:Addias Originals	
+	productFor:women
+    
+    response body
+	{
+    		"productId": "6690f8fcae2afd4c0b218da8",
+    		"message": "Product Added Successfully"
+	}
+
+
+3. place order for new product POST REQUEST ------
+
+    URL 
+
+    request body
+	{country: "India", productOrderedId: "6690f8fcae2afd4c0b218da8"}
+    
+    response body:
+	{
+    		"orders": [
+        		"6690feccae2afd4c0b219bfa"
+    		],
+    		"productOrderId": [
+        		"6581ca399fd99c85e8ee7f45"
+    		],
+    		"message": "Order Placed Successfully"
+	}
+
+
+
+
+
