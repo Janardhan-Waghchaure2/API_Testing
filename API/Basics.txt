@@ -1,6 +1,6 @@
 API -> Application programming interface 
 
-API is set of software procedures which allows 2 different softawares to interact with each other.
+API is set of software entity/program/procedures which allows 2 different softawares to interact with each other.
 by interaction we means to transfer data from one application to another application/prgramme.
 
 product1/service1 <--- api ---> product1/serveice2
