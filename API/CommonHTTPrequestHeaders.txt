@@ -1,0 +1,10 @@
+1. Authorization: Bearer <token>
+2. Content-Type: applicaton/json -> for json payloads.
+3. Accept: application/json  -> media type which client can accept from the server
+4. User-Agent: Mozilla/5.0 Safari/537.36 Chrome/91.0.4472.124 -> client software making this request
+5. Cache-Control: no-cache -> directs the behaviour of cache.
+6. Accept-Encoding: gzip, deflate, br -> Indicates the content-encoding that the client can understand.
+7. Host: example.com -> pecifies the domain name of the server.
+8. Referer: https://example.com/page -> Indicates the URL of the referring page.
+9. Cookie: sessionId=abcd1234 -> Contains stored HTTP cookies.
+10. X-Requested-With: XMLHttpRequest -> Identifies Ajax requests. Most JavaScript frameworks send this header with value XMLHttpRequest.
