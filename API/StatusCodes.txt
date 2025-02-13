@@ -1,0 +1,33 @@
+1. HTTP status codes are standard response codes that a server sends to 
+   a client to indicate the result of a request.
+
+---- 1XX Informational Purpose
+100 Continue
+101 Switching Protocols
+102 Processing
+103 Early Hints
+
+
+---- 2XX Success
+200 Success/Ok  
+201 Created 
+202 Accepted
+
+---- 3XX Redirection
+301 Permanent Redirect
+302 Temporary Redirect
+304 Not Modified
+
+---- 4XX Client Error
+400 Bad request
+401 Unauthorized 
+403 Forbidden 
+404 Not found
+405 Method Not Allowed
+
+---- 5XX Server Error
+500 Internal Server Error
+501 Not Implemented
+502 Bad Gateway
+503 Service Unavailable
+504 Gateway Timeout
