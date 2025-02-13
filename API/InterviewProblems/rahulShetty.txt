@@ -101,8 +101,8 @@ Basic Auth
 ------------
 
 13. What is SOAP WebService?
-   -> Simple Object Access Protocol. it uses XML to commnicate with other
-      comps.
+   -> Simple Object Access Protocol. it uses XML based messeging protocol
+      to commnicate with other comps.
 
 -------------
 
