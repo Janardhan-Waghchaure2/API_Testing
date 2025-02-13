@@ -70,6 +70,9 @@ Basic Auth
    https://sample.com/orders/1234?key=value 
                               |     |
                           pathparam  query param
+
+   path param -> prefix of /
+   quert param-> prefix of ?
 -----------
 9. what are core components of HTTP request?
 
