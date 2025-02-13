@@ -120,4 +120,16 @@ such as accidental deletions when a user clicks a link or refreshes a page.
 
 -------------
 
+16. what is payload?
+data sent to api to process the request(typicall REST uses json payloads)
 
+
+-------------
+
+17. what query params used for?
+    a ?key=value inside URL for filtering,sorting,customizing the api responses.
+
+-------------
+
+18. what is RestAssured
+    its a java library which can automate Rest API's.
