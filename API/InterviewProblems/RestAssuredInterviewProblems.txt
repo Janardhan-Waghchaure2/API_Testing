@@ -1,0 +1,6 @@
+1. how to define api details in Rest Assured Automation
+   -> API details are defined in given() , when() , then() methods.
+
+2. what is JSON serialization & deserialization in RestAssured.
+    serialization -> converting Java object into payloads.
+    deserialization -> payloads to Java object.
