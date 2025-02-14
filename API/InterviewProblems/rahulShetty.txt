@@ -127,9 +127,23 @@ data sent to api to process the request(typicall REST uses json payloads)
 -------------
 
 17. what query params used for?
-    a ?key=value inside URL for filtering,sorting,customizing the api responses.
+    a ?key=value inside URL for filtering,sorting,pagination,customizing the api responses.
 
 -------------
 
 18. what is RestAssured
     its a java library which can automate Rest API's.
+
+------------
+
+19. What is headers
+    addional information sending to process the details.
+    cookies can be sent through headers to process the data.
+------------
+
+20. What is cookies
+    cookie is small piece of data stored on client machine to process the
+    request's sent. Cookies are used to remember information about you and your preferences, 
+    such as your login status, items in your shopping cart, or your preferred language. This way, 
+    when you revisit the website, it can provide a more personalized and seamless experience.
+------------
