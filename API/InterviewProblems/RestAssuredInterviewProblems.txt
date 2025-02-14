@@ -4,3 +4,11 @@
 2. what is JSON serialization & deserialization in RestAssured.
     serialization -> converting Java object into payloads.
     deserialization -> payloads to Java object.
+
+3. what are common json parsing techniques in RestAssured?
+   -> serialization & deserialization.
+
+4. how to send attachments to API using RestAssured test?
+   -> using Multipart method.
+
+5. 
