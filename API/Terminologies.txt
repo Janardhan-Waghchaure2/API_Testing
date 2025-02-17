@@ -1,3 +1,4 @@
 1. Endpoint : An API endpoint is a URL that acts as the point of contact between
    API client and API server.
 
+2. base URL : absolute prefix of all the possible routes.
