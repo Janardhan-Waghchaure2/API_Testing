@@ -1,0 +1,22 @@
+1. validation testing -> it ensures that the API is returning the expected 
+   results and in correct format.
+
+2. Load testing -> it involves testing the API's preformance and stability under
+   stressful conditions.
+
+3. security testing -> it aims to identify security-level vulnarabilities and 
+   flaws in API.
+
+4. penetration testing -> it involves simulating attacks from hackers to detect
+   vulnarabilities and weakness in API.
+
+5. Fuzz testing -> it involves feeding unexpected & invalid inputs into api to
+   test its ability to handle unexpected input and recover from errors.
+
+6. integration texting -> it ensures integration of all the API's is correct.
+
+7. regression testing -> it ensures that the API is still functional after an update
+   or fixing a bug.
+
+8. UI testing -> ensures UI is using the api's correctly.
+
