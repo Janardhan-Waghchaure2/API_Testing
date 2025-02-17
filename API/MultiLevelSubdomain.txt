@@ -1,0 +1,17 @@
+Multi-level Subdomains:
+
+Main Domain: example.com
+Second-Level Subdomain: abcd.example.com
+Third-Level Subdomain: blog.abcd.example.com
+
+In this setup, abcd is a subdomain of example.com, and blog is a 
+subdomain of abcd.example.com. You can create as many levels of 
+subdomains as needed, though it's important to manage them properly for 
+clarity and maintainability.
+
+Example Scenario:
+Main Domain: example.com (main website)
+
+Subdomain: abcd.example.com (a specific section or service)
+
+Multi-level Subdomain: blog.abcd.example.com (a blog section within abcd)
