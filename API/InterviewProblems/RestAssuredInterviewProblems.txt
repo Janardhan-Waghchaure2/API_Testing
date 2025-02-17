@@ -11,4 +11,6 @@
 4. how to send attachments to API using RestAssured test?
    -> using Multipart method.
 
-5. 
+5. what is API testing? -> making sure api is behaving in an expected way.
+   i.e validating if response(headers and body) is correct for given 
+   CORRECT request.
