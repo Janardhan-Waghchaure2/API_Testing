@@ -14,3 +14,8 @@
 5. what is API testing? -> making sure api is behaving in an expected way.
    i.e validating if response(headers and body) is correct for given 
    CORRECT request.
+
+6. is it possible to have body for get request?
+   -> Technically, it is possible to send a request body with a GET 
+   request, but it's not a standard practice and is generally discouraged.
+
