@@ -9,3 +9,10 @@
 
 5. side effect: an operation or outcome that changes the state of the server, 
    database, or any other resource beyond just returning data to the client.
+
+6. request line: first line in an HTTP request. it consists of 3 parts.
+   1. HTTP method used
+   2. The request URI
+   3. The HTTP protocol version
+   ex request line -> GET /Bookstore/v1/Books HTTP/1.1
+   (note that base URL is not needed in request line)
