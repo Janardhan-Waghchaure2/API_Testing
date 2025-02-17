@@ -1,0 +1,10 @@
+1. REST API -> Representational State Transfer.
+
+2. SOAP API  -> Simple Object Access Protocol
+             -> Highly secure
+
+3. RPC API   -> Remote Procedure Call.
+
+4. GraphQL API-> Graph Query Language
+
+5. Webhook API->
