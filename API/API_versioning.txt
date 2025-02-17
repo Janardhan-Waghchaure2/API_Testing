@@ -1,0 +1,37 @@
+There are several ways to incorporate versioning into your API's URI. 
+Here are a few common approaches, along with examples:
+
+1. Version in the URL Path:
+   https://api.example.com/v1/users
+   https://api.example.com/v2/users
+
+2. Version as a Query Parameter:
+   https://api.example.com/users?version=1
+   https://api.example.com/users?version=2
+
+3. Version in the Header:
+   GET https://api.example.com/users
+   Headers: 
+     Accept: application/vnd.example.v1+json
+-------
+   GET https://api.example.com/users
+   Headers: 
+      Accept: application/vnd.example.v1+json
+
+4. Version in the Subdomain:
+   https://v1.api.example.com/users
+   https://v2.api.example.com/users
+
+Considerations-------
+
+URL Path Versioning is the most common and intuitive method, making it clear 
+which version of the API is being accessed.
+
+Query Parameter Versioning is less common but can be useful for specific cases.
+
+Header Versioning is useful for keeping URIs clean but may not be as 
+immediately visible as path versioning.
+
+Subdomain Versioning can be useful for large-scale APIs with significant 
+differences between versions.
+   
