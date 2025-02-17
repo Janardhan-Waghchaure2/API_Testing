@@ -6,3 +6,5 @@
       1. Presentation layer -> HTML , CSS  , JS.
       2. Application layer -> Java , .Net , C# , JS , Python , c++
       3. Data layer -> MySQL , Oracle , PostgreSQL  , SQLserver , MongoDB.
+
+4. so API works on application layer.
