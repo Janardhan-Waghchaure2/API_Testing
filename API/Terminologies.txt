@@ -6,3 +6,6 @@
 3. request : data transfer from client to server.
 
 4. response: data transfer from server to client. 
+
+5. side effect: an operation or outcome that changes the state of the server, 
+   database, or any other resource beyond just returning data to the client.
