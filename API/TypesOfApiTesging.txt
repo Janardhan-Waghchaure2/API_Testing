@@ -20,3 +20,4 @@
 
 8. UI testing -> ensures  api's correctly correctly with UI.
 
+9. functional testing -> ensures buissness logic is working correctly.
