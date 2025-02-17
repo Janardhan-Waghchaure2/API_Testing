@@ -1,0 +1,64 @@
+### Components of a URL:
+A URL (Uniform Resource Locator) consists of several parts that together 
+specify the location of a resource on the internet.
+
+**Example URL**:
+```
+https://www.example.com:8080/path/to/resource?query=param#fragment
+```
+
+1. **Protocol**:
+   - The protocol specifies how data is transferred. Common protocols include `http`, `https`, `ftp`, etc.
+   - **Example**: `https`
+
+2. **Domain Name**:
+   - The domain name identifies the server where the resource is hosted.
+   - **Example**: `www.example.com`
+
+3. **Port**:
+   - The port number is optional and specifies the port on the server to which the request is sent. 
+     If omitted, the default port for the protocol is used (e.g., 80 for HTTP, 443 for HTTPS).
+   - **Example**: `8080`
+
+4. **Path**:
+   - The path specifies the specific resource or file on the server.
+   - **Example**: `/path/to/resource`
+
+5. **Query Parameters**:
+   - Query parameters provide additional information to the server. They are in the format of key-value pairs and are separated by an ampersand (`&`).
+   - **Example**: `?query=param`
+
+6. **Fragment**:
+   - The fragment is an optional part that specifies a section within the resource, often used in HTML documents to navigate to a specific part of the page.
+   - **Example**: `#fragment`
+
+### Domain Name and Levels of Domains:
+A domain name is a human-readable address used to identify a website on the internet.
+
+1. **Top-Level Domain (TLD)**:
+   - The TLD is the highest level of the domain hierarchy and appears at the rightmost part of the domain name.
+   - **Examples**: `.com`, `.org`, `.net`, `.edu`
+   - **Example in URL**: `example.com` (TLD: `.com`)
+
+2. **Second-Level Domain (SLD)**:
+   - The SLD is directly to the left of the TLD and is typically the name of the organization or website.
+   - **Example in URL**: `example.com` (SLD: `example`)
+
+3. **Subdomain**:
+   - Subdomains are additional parts of the domain name that appear to the left of the SLD. 
+     They can be used to organize different sections or services of a website.
+   - **Examples**: `www.example.com`, `blog.example.com`
+   - **Example in URL**: `www.example.com` (Subdomain: `www`)
+
+### Example Breakdown:
+```
+https://blog.example.com:8080/articles/search?query=api#introduction
+```
+- **Protocol**: `https`
+- **Subdomain**: `blog`
+- **Second-Level Domain (SLD)**: `example`
+- **Top-Level Domain (TLD)**: `.com`
+- **Port**: `8080`
+- **Path**: `/articles/search`
+- **Query Parameters**: `query=api`
+- **Fragment**: `#introduction`
