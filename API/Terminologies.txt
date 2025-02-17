@@ -2,3 +2,7 @@
    API client and API server.
 
 2. base URL : absolute prefix of all the possible routes.
+
+3. request : data transfer from client to server.
+
+4. response: data transfer from server to client. 
