@@ -1,0 +1,5 @@
+The customer (you) makes a request to the waiter (API) by ordering a dish from the menu. 
+The waiter (API) takes your request to the chef (server) in the kitchen (backend). 
+The chef (server) prepares the dish (processes the request) and hands it back to the waiter (API), 
+who then serves it to you. 
+This process ensures you get your desired dish (response) without needing to interact directly with the kitchen (server).
