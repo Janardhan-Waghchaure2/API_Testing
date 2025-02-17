@@ -1,0 +1,4 @@
+1. Applications can be breaked down in 3 laters.
+      1. presentation layer -> UI.
+      2. Service layer -> API.
+      3. Data layer  -> DB's.
