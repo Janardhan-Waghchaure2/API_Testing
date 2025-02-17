@@ -15,7 +15,15 @@
    i.e validating if response(headers and body) is correct for given 
    CORRECT request.
 
-6. is it possible to have body for get request?
+6. is it possible to have body for GET request?
    -> Technically, it is possible to send a request body with a GET 
    request, but it's not a standard practice and is generally discouraged.
 
+7. why doesn't the HTTP GET Request use a body?
+   1. HTTP sepcification don't allow to do so.
+   2. Guaranteed Idenpotency: i.e each request woud just return some data and
+      wont cause any server/DB state changes on each request.
+   3. implementing the cache: advantage of not having any data in request 
+      body is that the results can be cached.
+   4. if the get requests are getting logged into system then storing some
+      body's data containing users personal info. could be issue.
