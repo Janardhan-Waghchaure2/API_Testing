@@ -70,7 +70,7 @@ break a large response into smaller manageble responses.
 we can use /a/b?limit=23&offset=50 parameter for pagination.
 
 7)----- api versioning
-req. should specify the api versionaing init so that 
+req. should specify the api versionaing init
 
 
 ------
