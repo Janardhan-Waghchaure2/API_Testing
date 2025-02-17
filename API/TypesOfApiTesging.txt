@@ -18,5 +18,5 @@
 7. regression testing -> it ensures that the API is still functional after an update
    or fixing a bug.
 
-8. UI testing -> ensures UI is using the api's correctly.
+8. UI testing -> ensures  api's correctly correctly with UI.
 
