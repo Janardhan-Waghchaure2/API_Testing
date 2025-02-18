@@ -22,7 +22,7 @@ stateless -> every request contains all the info. to serve a perticualr response
 req-res model -> only client requests for data not vice versa.
 uri -> each rest requsts contains an uri for locating a resource on the internet.
 
-ALTERNATIVES FOR REST:
+ALTERNATIVES FOR REST(for communication between 2 softwares):
 	1. GraphQL.
 	2. gRPC(google Remote Procedural Calls)
 	3. WebSockets.
