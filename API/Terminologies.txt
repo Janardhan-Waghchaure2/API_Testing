@@ -20,4 +20,4 @@
 7. resource -> any data file on the server is resource. a resource in REST is
    anagoues to Object in OOPS & Entities in DB.
 
-8. payload -> req/res body(containing data) of API request.
+8. payload/overhead -> req/res body(containing data) of API request.
