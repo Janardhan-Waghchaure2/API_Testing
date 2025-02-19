@@ -1,0 +1,10 @@
+1. what is resource?
+   any data(text , binary , etc..) over inside DB is resource.
+
+2. resource representations?
+   -> JSON , XML , ..
+
+3. properties of good resource representation:
+    1. understandability -> easy to understand
+    2. completeness 
+    3. Linkability
