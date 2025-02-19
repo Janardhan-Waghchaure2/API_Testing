@@ -23,5 +23,7 @@
 8. payload/overhead -> req/res body(containing data) of API request.
 
 9. http: hypertext transfer protocol -> for transferring the .html files
+         uses port 80
 
 10. https: hypertext transfer protocol secured.
+           uses port 443
