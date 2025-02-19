@@ -21,3 +21,7 @@
    anagoues to Object in OOPS & Entities in DB.
 
 8. payload/overhead -> req/res body(containing data) of API request.
+
+9. http: hypertext transfer protocol -> for transferring the .html files
+
+10. https: hypertext transfer protocol secured.
