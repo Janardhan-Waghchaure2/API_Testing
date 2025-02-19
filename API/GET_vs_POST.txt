@@ -1,0 +1,69 @@
+GET:--------------------
+Purpose:
+
+Used to retrieve data from the server.
+
+Should not have side effects on the server.
+
+Request Body:
+
+Does not support a request body.
+
+All data is sent in the URL as query parameters.
+
+Idempotence:
+
+Idempotent: Multiple identical requests will have the same effect as a single request.
+
+Caching:
+
+Can be cached by browsers and intermediary caches.
+
+Visibility:
+
+Parameters are visible in the URL, which can be bookmarked and shared.
+
+Data Length:
+
+Limited by the URL length, typically up to 2048 characters.
+
+Examples:
+
+Fetching a webpage: GET /index.html
+
+Searching: GET /search?q=api+testing+tools
+
+POST:--------------------
+Purpose:
+
+Used to send data to the server to create or update resources.
+
+Can have side effects on the server.
+
+Request Body:
+
+Supports a request body.
+
+Data is sent in the body of the request.
+
+Idempotence:
+
+Not idempotent: Multiple identical requests can have different effects (e.g., creating multiple resources).
+
+Caching:
+
+Generally not cached by browsers and intermediary caches.
+
+Visibility:
+
+Parameters are not visible in the URL, providing a level of privacy.
+
+Data Length:
+
+Not limited by URL length; suitable for sending large amounts of data.
+
+Examples:
+
+Submitting a form: POST /form
+
+Creating a user: POST /users
