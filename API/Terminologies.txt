@@ -17,4 +17,5 @@
    ex request line -> GET /Bookstore/v1/Books HTTP/1.1.
    (note that base URL is not needed in request line)
 
-7. resource -> any data file on the server is resource
+7. resource -> any data file on the server is resource. a resource in REST is
+   anagoues to Object in OOPS & Entities in DB.
