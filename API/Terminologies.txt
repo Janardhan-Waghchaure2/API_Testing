@@ -14,5 +14,7 @@
    1. HTTP method used -> GET , PUT , POST , DELETE
    2. The request URI
    3. The HTTP protocol version
-   ex request line -> GET /Bookstore/v1/Books HTTP/1.1
+   ex request line -> GET /Bookstore/v1/Books HTTP/1.1.
    (note that base URL is not needed in request line)
+
+7. resource -> any data file on the server is resource
