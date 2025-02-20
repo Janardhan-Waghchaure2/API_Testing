@@ -1,0 +1,27 @@
+While Postman is indeed a popular tool for manual testing of APIs, it's not limited to manual testing use case. 
+Postman offers a variety of features that make it suitable for automated testing, documentation, and more:
+
+### Manual Testing:
+- **Send Requests**: Easily create and send HTTP requests to test APIs.
+- **Inspect Responses**: View and analyze the responses from the server.
+- **Save Requests**: Save requests and organize them into collections for reuse.
+
+### Automated Testing:
+- **Test Scripts**: Write pre-request and test scripts using JavaScript to automate testing.
+- **Collection Runner**: Run a collection of requests in sequence and automate tests.
+- **Newman**: Use Postman's command-line tool, Newman, to run collections and scripts as part of your CI/CD pipeline.
+
+### Documentation:
+- **Generate Documentation**: Automatically generate API documentation from your collections.
+- **Publish**: Publish the documentation to a public or private URL for easy sharing.
+
+### Mock Servers:
+- **Create Mock Servers**: Set up mock servers to simulate API responses and test without relying on the actual API.
+
+### Monitoring:
+- **API Monitoring**: Schedule and monitor API requests to ensure uptime and performance.
+
+### Collaboration:
+- **Team Workspaces**: Share collections and collaborate with team members in real-time.
+
+Postman is a versatile tool that goes beyond manual testing, supporting a wide range of API development and testing workflows.
