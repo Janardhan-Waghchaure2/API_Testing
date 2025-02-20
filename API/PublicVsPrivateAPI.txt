@@ -1,0 +1,46 @@
+Public APIs:-----------
+
+Accessibility:
+Public APIs are available to external developers and third-party users.
+They are often documented and published for public use.
+
+Use Case:
+Enable third-party developers to integrate with a service.
+Encourage innovation by allowing developers to build on top of the platform.
+
+Examples:
+Google Maps API
+Twitter API
+OpenWeatherMap API
+
+Security:
+Public APIs require robust security measures, such as authentication and rate limiting, to prevent misuse.
+
+Monetization:
+Public APIs can be monetized through subscription plans, usage fees, or freemium models.
+
+Private APIs:-------------
+
+Accessibility:
+Private APIs are restricted to internal use within an organization.
+Access is limited to authorized developers and applications.
+
+Use Case:
+Facilitate communication between internal systems and services.
+Improve productivity and streamline workflows within the organization.
+
+Examples:
+Internal inventory management API
+Employee information API
+Internal microservices API
+
+Security:
+Private APIs also require strong security measures, but access control is typically managed internally.
+
+Monetization:
+Private APIs are not monetized as they are used internally.
+
+Summary:----------
+Public APIs are designed for external use, promoting integration and innovation, and often require extensive security measures.
+
+Private APIs are meant for internal use, facilitating internal communication and workflows within an organization, with access control managed internally.
