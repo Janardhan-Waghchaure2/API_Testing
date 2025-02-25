@@ -1,0 +1,12 @@
+1. 200 ok : success/ok & server responds with required payload/data.
+
+2. 201 Created: request was successful and reource is created.
+
+3. 202 Accepted: request has been accepted for processing but is not yet
+   completed.
+
+4. 203 Non-Authoritative Information: The request was successful, but the 
+   response contains modified information from a third party.
+
+5. 204 No Content: The request was successful, but there is no content to send
+   in response
