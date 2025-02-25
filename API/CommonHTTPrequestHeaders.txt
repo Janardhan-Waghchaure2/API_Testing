@@ -1,4 +1,5 @@
-1. Authorization: Bearer <token>
+1. Authorization: Bearer <token> , Basic <base64-encoded-cred> , Digest <digest-cred> , OAuth <oauth-params> 
+
 2. Content-Type: applicaton/json -> for json payloads.
 3. Accept: application/json  -> media type which client can accept from the server
 4. User-Agent: Mozilla/5.0 Safari/537.36 Chrome/91.0.4472.124 -> client software making this request
