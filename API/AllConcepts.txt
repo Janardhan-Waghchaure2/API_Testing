@@ -3,13 +3,32 @@ Serialization/deserialization
 POJO / Plain Old Java object.
 What is Schema validation?
 Why Schema validation needed?
-Request & Response specification.
+
+--------
+Request & Response specification:--
+
+We use request and response specifications in RestAssured to simplify and 
+standardize the setup of our API tests. These specifications help us avoid 
+code duplication and make the tests cleaner and more maintainable.
+
+Benefits of Using Request and Response Specifications:
+
+1. Code Reusability: Define common request and response settings once and reuse them across multiple tests.
+
+2. Clean Code: Keep your test code clean and easy to read by separating the common setup from the test logic.
+
+3. Consistency: Ensure consistency in request and response configurations, 
+   such as headers, authentication, and base URIs, across all tests.
+
+4. Ease of Maintenance: Update the specifications in one place if any changes 
+   are required, rather than modifying every test individually.
+
+--------
 There are 2 types of fromats for API contract
 	1. Json 
 	2. XML
 
-
-
+-------
 Response Schema example
 {
 	"type": "object",
