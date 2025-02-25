@@ -1,0 +1,15 @@
+### Authentication Techniques:
+1. Password-based authentication
+2. Multi-factor authentication (MFA)
+3. Biometric authentication (fingerprint, facial recognition)
+4. Token-based authentication (JWT, OAuth)
+5. Certificate-based authentication
+
+### Authorization Techniques:
+1. Role-based access control (RBAC)
+2. Attribute-based access control (ABAC)
+3. Access control lists (ACLs)
+4. Policy-based access control (PBAC)
+5. JSON Web Token (JWT) authorization
+
+If you need more information or examples for any of these techniques, feel free to ask!
