@@ -1,6 +1,20 @@
-100:
+100 Continue:
   Purpose: To inform the client that the initial part of the request has been received and 
   the client can continue with the rest of the request or ignore if it's already completed.
 
   Use Case: Commonly used in scenarios where the client is sending a large request body and 
   wants to check if the server is willing to accept it before actually sending it.
+-------------------
+101 Switching Protocols:
+Purpose: To inform the client that the server is switching to the protocol requested by the client.
+
+Use Case: Used in situations where the client requests to switch protocols, 
+          such as upgrading from HTTP/1.1 to HTTP/2 or using WebSockets.
+
+Example: A client requests to upgrade the connection to use WebSockets by including Upgrade: websocket 
+        in the request headers. The server responds with 101 Switching Protocols to acknowledge the switch.
+-------------------
+102 Processing:
+A client sends a request to perform a long-running operation like copying a large collection of resources. 
+The server responds with 102 Processing to indicate that it is still working on the request.
+
