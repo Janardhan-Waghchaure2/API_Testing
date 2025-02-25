@@ -1,0 +1,6 @@
+1. 300 Multiple choices : The request has more than one possible response;
+   user or client should choose one.
+
+2. 301 Moved Permanently: The resource has been moved to a new URL permanently.
+
+3. 302 Found: The resource has been temporarily moved to a different URL.
