@@ -1,0 +1,6 @@
+100:
+  Purpose: To inform the client that the initial part of the request has been received and 
+  the client can continue with the rest of the request or ignore if it's already completed.
+
+  Use Case: Commonly used in scenarios where the client is sending a large request body and 
+  wants to check if the server is willing to accept it before actually sending it.
