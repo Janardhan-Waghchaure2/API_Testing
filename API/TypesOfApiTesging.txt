@@ -1,7 +1,7 @@
 1. validation testing -> it ensures that the API is returning the expected 
    results and in correct format.
 
-2. Load testing -> it involves testing the API's preformance and stability under
+2. Load & peformance testing -> it involves testing the API's preformance and stability under
    stressful conditions.
 
 3. security testing -> it aims to identify security-level vulnarabilities and 
