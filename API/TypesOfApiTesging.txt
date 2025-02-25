@@ -13,7 +13,7 @@
 5. Fuzz testing -> it involves feeding unexpected & invalid inputs into api to
    test its ability to handle unexpected input and recover from errors.
 
-6. integration texting -> it ensures integration of all the API's is correct.
+6. integration testing -> it ensures integration of all the API's is correct.
 
 7. regression testing -> it ensures that the API is still functional after an update
    or fixing a bug.
