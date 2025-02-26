@@ -1,0 +1,9 @@
+1. XmlSchemaValidation ->ensuring data recevied from API is in correct format and has 
+   expected values.
+
+2. XML validation Ways:
+      1. Inline Schema validation: define schema inline and validate
+         String xsd = "xml schema"; // xsdd -> Xml Schema Defination
+         RestAssured.given().get("/api").then().body(matchesXsd(xsd));
+
+      2. External Schema validation: define schema in a seperatte .xml file
