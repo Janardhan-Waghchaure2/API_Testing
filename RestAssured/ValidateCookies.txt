@@ -1,0 +1,16 @@
+1. cookies validation -> retriving the cookie from servers response and validating 
+   againt know expected target values.
+
+2. extracting cookies from response
+      Cookies cookies = resp.getDetailedCookies();
+      System.out.println(cookies);
+
+3. extract a specific cookie
+      String specificCookie = resp.getCookie("name");
+      System.out.println(specificCookie);
+
+4. validate a specific cookie
+      resp.then().assertThat().cookie("name" , equalTo("expectedValue"));
+
+5. validate if specific cookie exists
+      resp.then().assertThat().cookie("cookieName");
