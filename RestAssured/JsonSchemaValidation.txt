@@ -1,0 +1,14 @@
+1. Schema validation is checking whether JSON response from API matches a predefined
+   schema, ensuring the data structure, types, and formats are as expected.
+
+Methods.
+  1. matchesJsonSchemaInClasspath method -> matches schema with external schema.
+        res.body(matchesJsonSchemaInClasspath("schema.json"))
+
+  2. Field-by-Field validation -> checking indivisual fields.
+        res.body("field-name" , equalTo(expectedValue));
+
+  3. root method -> checking existance of fields
+        res.root("data").
+        body("field1" , notNullValue()).
+        body("field2" , notNullValue());
