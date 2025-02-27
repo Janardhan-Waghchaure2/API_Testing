@@ -1,0 +1,17 @@
+1. to check if given field have certain value
+   .then().assertThat().body("key" , equalsTo("expectedValue"))
+
+2. list size check to check size of array/list in response
+   .then().assertThat().body("listKey.size()" , is(3))
+
+3. existance check : to check if certain field exists
+   .then().assertThat().body("key" , notNullValue())
+
+4. multiple assertions : to check if multiple conditions are true.
+   .then().assertThat()
+   .body("key1" , equalsTo("value1"))
+   .body("key2" , equalsTo("value2"))
+
+5. logical operations like and , or , not
+   .body("key" , anyOf(is("value1") , is("value2") , not("value3")))
+
