@@ -1,0 +1,19 @@
+1. setting single header
+    given()
+    .header("Content-Type" , "application/json")
+
+2. settting multiple headers
+    given()
+    .header("Content-Type" , "application/json" , "Accept" , "application/json")
+                or
+    given()
+    .header("Content-Type" , "application/json")
+    .header("Accept" , "application/json")
+    
+3. setting mutiple headers with map.
+    Map<String , String> headers = new HashMap<>();
+    headers.put("Content-Type" , "application/json");
+    headers.put("Accept" , "application/json");
+
+    given.headers(headers);
+    
