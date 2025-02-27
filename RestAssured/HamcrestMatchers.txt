@@ -15,3 +15,25 @@
 5. logical operations like and , or , not
    .body("key" , anyOf(is("value1") , is("value2") , not("value3")))
 
+6. value of specific field is less than a specific value.
+   .then().assertThat()
+   .body("responseValue", lessThan(100))
+
+7. validate body with custom function.
+   .body("responseValue", value -> {
+                myCustomValidation(value);
+                return true; // Return true to satisfy the Predicate interface
+   });
+
+   }
+
+    private void myCustomValidation(Object value) {
+        // Custom validation logic
+        int intValue = Integer.parseInt(value.toString());
+        
+        if (intValue < 50) {
+            throw new AssertionError("responseValue is less than 50");
+        }
+
+        // Add more custom checks as needed
+    }
