@@ -1,0 +1,22 @@
+Encryption and encoding are both processes used to transform data, 
+but they serve different purposes and have distinct characteristics:
+
+### Encryption:
+- **Purpose**: The primary goal of encryption is to protect data by making it unreadable to unauthorized users. 
+               It ensures confidentiality and security.
+- **Process**: Encryption algorithms use a key to convert plain text into ciphertext. Only those with the correct 
+               decryption key can revert the ciphertext back to its original form.
+- **Usage**: Commonly used in securing sensitive information such as passwords, 
+             financial data, and personal communications.
+
+### Encoding:
+- **Purpose**: Encoding's main objective is to transform data into a different format for efficient 
+               storage or transmission. It ensures data integrity and usability.
+- **Process**: Encoding schemes, such as Base64 or URL encoding, convert data into a different format 
+               without using a key. The process is reversible and doesn't involve any security measures.
+- **Usage**: Commonly used in data representation, such as converting binary data to text for transmission 
+             over media that only support text, or ensuring special characters are correctly transmitted in URLs.
+
+**Summary**:
+- **Encryption**: Focuses on security and requires a key for decryption.
+- **Encoding**: Focuses on data transformation for compatibility and storage without security considerations.
