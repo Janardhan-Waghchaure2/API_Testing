@@ -50,3 +50,6 @@ authentication : showing id on gate and passing through security.
 autherization : trying to enter ODC building where we don't have access to.
                 i.e checking if your having rights to enter into a specific
                  service/system.
+
+we first need to pass security gate BEFORE ENTERING INTO AN ODC module , 
+i.e authentication comes first than autherization.
