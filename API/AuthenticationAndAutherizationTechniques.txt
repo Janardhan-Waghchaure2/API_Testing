@@ -1,9 +1,22 @@
 ### Authentication Techniques:
-1. Password-based authentication
+
+1. Password-based/basic token authentication 
+   -> id,pass/token is sent with every request to authenticate user.
+
 2. Multi-factor authentication (MFA)
 3. Biometric authentication (fingerprint, facial recognition)
 4. Token-based authentication (JWT, OAuth)
 5. Certificate-based authentication
+
+6. API key auth: a key is sent by the API server and is sent on every request
+   to server(as a header , query or path param of http request).
+
+7. digest auth: digest auth uses cryptographic hashing to ensure that 
+   credentials are not transmitted in an easily readable form.
+
+8. Bearer Token Authentication:- user/client authenticates with an auth 
+   server, and server issues a unique key/token to user/client. this token
+   is sent in every request.
 
 ### Authorization Techniques:
 1. Role-based access control (RBAC)
@@ -12,4 +25,3 @@
 4. Policy-based access control (PBAC)
 5. JSON Web Token (JWT) authorization
 
-If you need more information or examples for any of these techniques, feel free to ask!
