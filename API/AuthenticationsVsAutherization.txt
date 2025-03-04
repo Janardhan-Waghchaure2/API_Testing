@@ -42,4 +42,11 @@ Authentication and authorization are two fundamental concepts in the field of cy
 
 Both processes work together to ensure secure access to resources. Authentication happens first to identify the user, followed by authorization to grant appropriate permissions based on the user's identity.
 
-If you have more questions or need further clarification, feel free to ask!
+
+
+------------ analogy:
+authentication : showing id on gate and passing through security.
+                 i.e checking if you can enter into system.
+autherization : trying to enter ODC building where we don't have access to.
+                i.e checking if your having rights to enter into a specific
+                 service/system.
