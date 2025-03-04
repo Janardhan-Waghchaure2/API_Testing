@@ -47,9 +47,11 @@ Both processes work together to ensure secure access to resources. Authenticatio
 ------------ analogy:
 authentication : showing id on gate and passing through security.
                  i.e checking if you can enter into system.
+                 done by the user/client.
 autherization : trying to enter ODC building where we don't have access to.
                 i.e checking if your having rights to enter into a specific
                  service/system.
+                for gaining access we need to contact admin.
 
 we first need to pass security gate BEFORE ENTERING INTO AN ODC module , 
 i.e authentication comes first than autherization.
