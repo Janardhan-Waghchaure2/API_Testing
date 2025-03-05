@@ -1,0 +1,47 @@
+The terms **form-data** and **multipart** are often used interchangeably, 
+but they have specific differences when it comes to sending data, especially 
+in HTTP requests:
+
+### **1. Form-Data**
+- **Definition**: Form-data is a specific encoding type (`application/x-www-form-urlencoded` or `multipart/form-data`) used to send key-value pairs, often from web forms.
+- **Common Use**: It's mostly used for simple form submissions where data is sent as key-value pairs (e.g., text fields, checkboxes, or dropdowns).
+- **Encoding**: 
+  - For `application/x-www-form-urlencoded`, keys and values are URL-encoded and sent in a single body.
+  - For `multipart/form-data`, the data is divided into parts when there are files or binary data involved.
+- **Example**:
+  ```
+  Content-Type: multipart/form-data
+  Body:
+  --boundary
+  Content-Disposition: form-data; name="username"
+
+  user123
+  --boundary
+  Content-Disposition: form-data; name="file"; filename="example.txt"
+
+  (file content)
+  --boundary--
+  ```
+
+---
+
+### **2. Multipart**
+- **Definition**: Multipart is a broader mechanism used to send various types of data in parts (or sections) within a single HTTP request body. It is a type of form-data but supports more complex data, including files and binary content.
+- **Common Use**: It's primarily used for uploading files (e.g., images, videos) along with form fields.
+- **Structure**: The request body is divided into multiple parts, each with its own `Content-Type` and headers, separated by boundaries.
+- **Example**: Multipart is typically used for file uploads via `Content-Type: multipart/form-data`.
+
+---
+
+### Key Differences:
+| Aspect                | **Form-Data**                  | **Multipart**                         |
+|-----------------------|---------------------------------|---------------------------------------|
+| **Purpose**           | Key-value pairs, simple forms  | More complex data (e.g., files)       |
+| **Encoding**          | URL-encoded or multipart       | Multipart (always divided into parts) |
+| **Use Case**          | Simple data (like text fields) | Binary data, file uploads + text      |
+| **Example**           | Text-based data only           | Mix of text and files                 |
+
+---
+
+In summary:
+- **Form-data** is typically used in web form submissions, and **multipart** is a specific subset that allows uploading files alongside form fields.
