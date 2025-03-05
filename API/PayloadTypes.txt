@@ -23,3 +23,6 @@ xml payload
     <user_name> Random </user_name>
     <user_email> random@gmail.com </user_email>
 </user>
+
+form-data/form-data multipart -> sending text + non-text data(files ,img..)
+
