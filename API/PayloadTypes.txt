@@ -6,6 +6,7 @@
     2. pass POJO to body(programatically creating the json payloads) with 
        help of Jackson or Gson library.
     3. send .json file as a payload.
+    4. store json string as a static variable of class and pass it as payload
 
 JSON payload
 {
