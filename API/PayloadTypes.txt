@@ -8,6 +8,24 @@
     3. send .json file as a payload.
     4. store json string as a static variable of class and pass it as payload
 
+
+------------------------
+
+3. header for different payloads.
+
+JSON: Content-Type: application/json
+
+XML: Content-Type: application/xml
+
+Raw: Content-Type: application/octet-stream
+
+Text: Content-Type: text/plain
+
+Form-Data: Content-Type: multipart/form-data; boundary=---boundary
+
+Multipart: Content-Type: multipart/mixed; boundary=---boundary
+
+------------------------
 JSON payload
 {
    "user_id" : 1 , 
