@@ -1,0 +1,82 @@
+### 1. Create a POJO Class
+Define a POJO class with fields that match the structure of your JSON payload. 
+Annotate it with `@JsonProperty` if needed (optional with libraries like Jackson or Gson):
+
+```java
+public class User {
+
+    private String name;
+    private String email;
+
+    // Constructors
+    public User(String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
+
+    // Getters and Setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+}
+```
+
+### 2. Pass the POJO in RestAssured Request Body
+You can pass the POJO object directly in the request body using the `.body()` method. 
+RestAssured will automatically serialize it into JSON format (ensure you have a JSON 
+library like Jackson or Gson on your classpath).
+
+
+```java
+
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
+
+public class APITest {
+    public static void main(String[] args) {
+
+        RestAssured.baseURI = "https://api.example.com";
+
+        // Create a User object
+        User user = new User("John Doe", "john.doe@example.com");
+
+        // Send a POST request with the POJO as the body
+        given()
+            .header("Content-Type", "application/json")
+            .body(user)  // Pass the POJO
+        .when()
+            .post("/users")
+        .then()
+            .statusCode(201);
+    }
+}
+
+```
+
+### 3. Dependency for JSON Serialization
+If you're using Jackson for JSON serialization, add the following dependency to your `pom.xml`:
+
+```xml
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.14.0</version>
+</dependency>
+```
+
+### Why Use POJOs for Requests?
+- **Readability**: The code becomes more intuitive and easy to maintain.
+- **Reusability**: You can reuse the same POJO across different test cases or APIs.
+- **Error Reduction**: Avoids errors caused by manual JSON creation.
