@@ -1,6 +1,12 @@
 1. payload is the data/information that is sent by client in a request to the 
    server or the data that is returned by the server in response to a request.
 
+2. types of sendint json payload in request. 
+    1. Directly hardcode JSON data in the string variable and pass that string.
+    2. pass POJO to body(programatically creating the json payloads) with 
+       help of Jackson or Gson library.
+    3. send .json file as a payload.
+
 JSON payload
 {
    "user_id" : 1 , 
