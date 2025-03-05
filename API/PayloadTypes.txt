@@ -1,0 +1,16 @@
+1. payload is the data/information that is sent by client in a request to the 
+   server or the data that is returned by the server in response to a request.
+
+JSON payload
+{
+   "user_id" : 1 , 
+   "user_name" : "Random" , 
+   "email" : "random@gmail.com"
+}
+
+xml payload
+<user>
+    <user_id> 1 </user_id>
+    <user_name> Random </user_name>
+    <user_email> random@gmail.com </user_email>
+</user>
