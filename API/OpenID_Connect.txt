@@ -1,0 +1,19 @@
+The OpenID protocol is an open standard and decentralized authentication system that allows users 
+to log in to multiple websites using a single identity. Instead of creating separate usernames and 
+passwords for each site, users authenticate through a trusted third-party identity provider (IDP), 
+which verifies their identity and shares it with the website they want to access (known as the relying party).
+
+### Key Features:
+1. **Single Sign-On (SSO)**: Users can log in to multiple websites with one set of credentials, simplifying the login process.
+2. **Decentralized**: OpenID does not rely on a central authority; any entity can act as an identity provider.
+3. **Flexibility**: It supports various authentication methods, from passwords to biometrics.
+4. **User Control**: Users can choose which identity provider to use and what information to share with relying parties.
+
+### How It Works:
+1. A user selects an OpenID identity provider and logs in.
+2. The identity provider authenticates the user and generates an identifier (a unique URI).
+3. The user uses this identifier to log in to websites that support OpenID.
+4. The relying party verifies the user's identity with the identity provider.
+
+OpenID is widely used for simplifying authentication processes and enhancing user convenience. 
+[OpenID Foundation's resources -> https://openid.net/developers/how-connect-works/
