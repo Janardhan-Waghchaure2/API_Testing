@@ -1,4 +1,5 @@
-You're close, but let's clarify it a bit more. **CORS** (Cross-Origin Resource Sharing) is a security feature implemented by browsers to restrict web pages from making requests to a different origin than the one that served the web page.
+**CORS** (Cross-Origin Resource Sharing) is a security feature implemented by browsers to restrict web pages 
+from making requests to a different origin than the one that served the web page.
 
 ### Key Points about CORS:
 1. **Same Origin Policy**: 
@@ -26,5 +27,3 @@ Access-Control-Allow-Origin: http://localhost:3000
 - **Same Origin Policy**: Restricts web pages to making requests only to the same origin that served them.
 - **CORS**: Allows servers to specify which origins are permitted to access their resources using special headers.
 - **Your Scenario**: Involves cross-origin requests even if the processes are on the same physical machine but different ports.
-
-If you have more questions or need further clarification, feel free to ask!
