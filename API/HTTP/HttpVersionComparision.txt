@@ -1,0 +1,70 @@
+---
+
+### **HTTP/0.9**
+- **Introduced**: 1991
+- **Key Features**:
+  - Very basic protocol, only supported the `GET` method.
+  - No headers, status codes, or metadata.
+  - Designed for simple text-based communication.
+- **Limitations**:
+  - No support for modern web features like images, stylesheets, or scripts.
+
+---
+
+### **HTTP/1.0**
+- **Introduced**: 1996
+- **Key Features**:
+  - Added support for headers and status codes.
+  - Allowed more complex communication, including images and multimedia.
+  - Each request required a new TCP connection.
+- **Limitations**:
+  - Inefficient due to the lack of persistent connections.
+
+---
+
+### **HTTP/1.1**
+- **Introduced**: 1997
+- **Key Features**:
+  - Persistent connections (keep-alive) to reuse TCP connections.
+  - Chunked transfer encoding for streaming data.
+  - Added more HTTP methods like `PUT`, `DELETE`, and `OPTIONS`.
+  - Improved caching mechanisms.
+- **Limitations**:
+  - Head-of-line blocking: Requests were processed sequentially, causing delays.
+
+---
+
+### **HTTP/2**
+- **Introduced**: 2015
+- **Key Features**:
+  - Multiplexing: Multiple requests and responses can be sent simultaneously over a single connection.
+  - Binary protocol (instead of text-based) for faster processing.
+  - Header compression to reduce overhead.
+  - Prioritization of requests.
+- **Limitations**:
+  - Still relies on TCP, which can cause latency issues due to packet loss.
+
+---
+
+### **HTTP/3**
+- **Introduced**: 2020 (based on QUIC protocol)
+- **Key Features**:
+  - Uses QUIC (UDP-based) instead of TCP for faster and more reliable connections.
+  - Eliminates head-of-line blocking at the transport layer.
+  - Improved performance for mobile and high-latency networks.
+  - Built-in encryption (TLS 1.3).
+- **Advantages**:
+  - Faster page loads and better handling of packet loss.
+
+---
+
+### **Summary Table**
+| **Version** | **Year** | **Key Features**                          | **Limitations**                     |
+|-------------|----------|-------------------------------------------|-------------------------------------|
+| HTTP/0.9    | 1991     | Basic `GET` method, no headers            | No multimedia or modern features   |
+| HTTP/1.0    | 1996     | Headers, status codes, multimedia         | No persistent connections          |
+| HTTP/1.1    | 1997     | Persistent connections, chunked encoding  | Head-of-line blocking              |
+| HTTP/2      | 2015     | Multiplexing, binary protocol, compression| Relies on TCP                      |
+| HTTP/3      | 2020     | QUIC protocol, faster, encrypted          | Still gaining adoption             |
+
+---
