@@ -18,10 +18,10 @@
        needs to be handle with resepective endpoints.
 
 -------
-2. diff between POST and PUT
+2. diff between POST and PUT and PATCH
     POST -> to create new data/object on server side.
     PUT  -> update object in server with new value.
-
+    PATCH -> only updates the filed provided in body.
 -------
 3. HTTP methods?
     1. GET   -> to get the resource
