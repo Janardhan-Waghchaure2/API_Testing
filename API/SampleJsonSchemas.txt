@@ -1,0 +1,120 @@
+---
+
+### **1. User Information Response Schema**
+For an API that retrieves user information:
+```json
+{
+  "type": "object",
+  "properties": {
+    "id": { "type": "integer" },
+    "name": { "type": "string" },
+    "email": { "type": "string", "format": "email" },
+    "isActive": { "type": "boolean" }
+  },
+  "required": ["id", "name", "email", "isActive"]
+}
+```
+
+---
+
+### **2. List of Products Response Schema**
+For an e-commerce API that provides a list of products:
+```json
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "productId": { "type": "integer" },
+      "productName": { "type": "string" },
+      "price": { "type": "number" },
+      "inStock": { "type": "boolean" }
+    },
+    "required": ["productId", "productName", "price", "inStock"]
+  }
+}
+```
+
+---
+
+### **3. Booking Confirmation Response Schema**
+For a hotel or flight booking API:
+```json
+{
+  "type": "object",
+  "properties": {
+    "bookingId": { "type": "string" },
+    "customerName": { "type": "string" },
+    "bookingDates": {
+      "type": "object",
+      "properties": {
+        "checkin": { "type": "string", "format": "date" },
+        "checkout": { "type": "string", "format": "date" }
+      },
+      "required": ["checkin", "checkout"]
+    },
+    "totalPrice": { "type": "number" },
+    "paymentStatus": { "type": "string", "enum": ["paid", "pending", "failed"] }
+  },
+  "required": ["bookingId", "customerName", "bookingDates", "totalPrice", "paymentStatus"]
+}
+```
+
+---
+
+### **4. Error Response Schema**
+For handling API errors:
+```json
+{
+  "type": "object",
+  "properties": {
+    "errorCode": { "type": "integer" },
+    "errorMessage": { "type": "string" },
+    "timestamp": { "type": "string", "format": "date-time" }
+  },
+  "required": ["errorCode", "errorMessage", "timestamp"]
+}
+```
+
+---
+
+### **5. Paginated Data Response Schema**
+For APIs that return paginated results:
+```json
+{
+  "type": "object",
+  "properties": {
+    "currentPage": { "type": "integer" },
+    "totalPages": { "type": "integer" },
+    "pageSize": { "type": "integer" },
+    "totalItems": { "type": "integer" },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer" },
+          "name": { "type": "string" }
+        }
+      }
+    }
+  },
+  "required": ["currentPage", "totalPages", "pageSize", "totalItems", "data"]
+}
+```
+
+---
+
+### **6. Authentication Token Response Schema**
+For an authentication API:
+```json
+{
+  "type": "object",
+  "properties": {
+    "token": { "type": "string" },
+    "expiresIn": { "type": "integer" },
+    "refreshToken": { "type": "string" }
+  },
+  "required": ["token", "expiresIn", "refreshToken"]
+}
+```
