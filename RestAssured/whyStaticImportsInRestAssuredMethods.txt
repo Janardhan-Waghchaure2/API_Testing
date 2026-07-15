@@ -1,0 +1,85 @@
+In Rest Assured, given(), when(), and then() are usually imported using static import to make the code more readable and support BDD-style syntax.
+
+Without Static Import
+import io.restassured.RestAssured;
+
+RestAssured.given()
+           .when()
+           .get("/users")
+           .then()
+           .statusCode(200);
+
+With Static Import
+import static io.restassured.RestAssured.*;
+
+given()
+    .when()
+    .get("/users")
+    .then()
+    .statusCode(200);
+
+Why Use Static Import?
+1. Better Readability
+
+It reads almost like English:
+
+given()
+when()
+then()
+
+
+instead of:
+
+RestAssured.given()
+RestAssured.when()
+RestAssured.then()
+
+2. Supports BDD Style
+
+Rest Assured is designed around the BDD pattern:
+
+given()   // preconditions
+when()    // action
+then()    // validation
+
+
+Example:
+
+given()
+    .header("Content-Type", "application/json")
+.when()
+    .post("/users")
+.then()
+    .statusCode(201);
+
+3. Less Boilerplate Code
+
+Instead of repeatedly writing:
+
+RestAssured.given()
+
+
+you simply write:
+
+given()
+
+
+making tests cleaner and easier to maintain.
+
+Common Static Import in Rest Assured
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+
+
+Then you can write:
+
+given()
+.when()
+    .get("/users/2")
+.then()
+    .statusCode(200)
+    .body("data.id", equalTo(2));
+
+Interview Answer (Short)
+
+We use static imports for given(), when(), and then() in Rest Assured to improve readability, reduce boilerplate code, and support BDD-style test writing. Static imports allow us to call these methods directly without prefixing them with RestAssured.
