@@ -1,0 +1,38 @@
+1. validate multiple headers indivisually.
+    given()
+    .when()
+        .get("https://reqres.in/api/users/2")
+    .then()
+        .statusCode(200)
+        .header("Content-Type", "application/json; charset=utf-8")
+        .header("Server", "cloudflare")
+        .header("Connection", "keep-alive");
+
+2. validate in single headerse function
+
+    given()
+    .when()
+        .get("https://reqres.in/api/users/2")
+    .then()
+        .statusCode(200)
+        .headers(
+            "Content-Type", "application/json; charset=utf-8",
+            "Connection", "keep-alive"
+        );
+
+3. store and validate headers
+
+      Response response =
+          given()
+          .when()
+          .get("https://reqres.in/api/users/2");
+      
+      Assert.assertEquals(
+          response.getHeader("Content-Type"),
+          "application/json; charset=utf-8"
+      );
+      
+      Assert.assertEquals(
+          response.getHeader("Connection"),
+          "keep-alive"
+      );
