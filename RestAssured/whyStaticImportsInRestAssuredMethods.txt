@@ -1,4 +1,6 @@
-In Rest Assured, given(), when(), and then() are usually imported using static import to make the code more readable and support BDD-style syntax.
+In Rest Assured, given(), when(), and then()(all 3 are static methods means they dont need obj creation for using them) 
+are usually imported using static import to make the code more readable and support BDD-style syntax.
+
 
 Without Static Import
 import io.restassured.RestAssured;
