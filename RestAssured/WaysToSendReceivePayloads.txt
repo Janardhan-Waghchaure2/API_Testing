@@ -1,0 +1,131 @@
+In Rest Assured, "accepting/sending responses" usually means how we send request data and how we capture response data.
+
+1. Get Response as Response Object (Most Common)
+Response response =
+        given()
+        .when()
+        .get("https://reqres.in/api/users/2");
+System.out.println(response.getStatusCode());
+System.out.println(response.getBody().asString());
+
+2. Get Response as String
+String response =
+        given()
+        .when()
+        .get("https://reqres.in/api/users/2")
+        .then()
+        .extract()
+        .response()
+        .asString();
+
+Output:
+{
+  "data":{
+    "id":2
+  }
+}
+
+3. Get Response as JSON Path
+JsonPath js =
+        given()
+        .when()
+        .get("https://reqres.in/api/users/2")
+        .jsonPath();
+
+System.out.println(js.getInt("data.id"));
+System.out.println(js.getString("data.email"));
+
+
+4. Get Response as POJO Class(PLAIN OLD JAVA OBJ.)
+Response JSON:
+
+{
+  "name":"John",
+  "job":"QA"
+}
+
+
+POJO:
+
+public class User {
+    private String name;
+    private String job;
+
+    // getters setters
+}
+
+
+Usage:
+
+User user =
+        given()
+        .when()
+        .get("/user")
+        .as(User.class);
+
+System.out.println(user.getName());
+
+
+Different Ways to Send Request Data
+1. Using Body String
+String payload =
+"{\"name\":\"John\",\"job\":\"QA\"}";
+
+given()
+    .body(payload)
+.when()
+    .post("/users");
+
+2. Using HashMap
+HashMap<String,String> data = new HashMap<>();
+
+data.put("name","John");
+data.put("job","QA");
+
+given()
+    .body(data)
+.when()
+    .post("/users");
+
+3. Using POJO Class
+User user = new User();
+
+user.setName("John");
+user.setJob("QA");
+
+given()
+    .body(user)
+.when()
+    .post("/users");
+
+
+4. Using JSON Object
+JSONObject obj = new JSONObject();
+
+obj.put("name","John");
+obj.put("job","QA");
+
+given()
+    .body(obj.toString())
+.when()
+    .post("/users");
+
+
+5. Sending Parameters
+Query Parameter
+given()
+    .queryParam("page", 2)
+.when()
+    .get("/users");
+
+
+URL becomes:
+
+/users?page=2
+
+Path Parameter
+given()
+    .pathParam("id", 2)
+.when()
+    .get("/users/{id}");
+
